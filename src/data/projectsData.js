@@ -930,9 +930,9 @@ const projects = [
       {
         type: 'image',
         src: '/images/projects/ansan/panel_2_right.webp',
-        alt: 'Microclimate simulation and solar analysis',
+        alt: 'Design concept diagrams',
         size: 'medium',
-        caption: 'Microclimatic environment simulations and wind/sunlight diagrams.',
+        caption: 'Design Concept Diagrams: Central circle landmark and run/walk track circulation (디자인 컨셉 다이어그램: 센트럴 서클 랜드마크 및 순환 동선)',
       },
 
       // 6. Integrated Health & Symbolic Infrastructure (Image Left, Text Right)
