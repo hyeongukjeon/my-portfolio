@@ -878,6 +878,150 @@ const projects = [
       },
     ],
   },
+  {
+    id: 6,
+    slug: 'cross-connect-ansan',
+    title: 'Cross-Connect Ansan',
+    year: '2024',
+    program: 'Urban Design & Infrastructure / Collective Housing',
+    category: 'Architecture',
+    location: 'Ansan, Korea',
+    thumbnail: '/images/projects/ansan/main_render.webp',
+    description:
+      'Cross-Connect Ansan proposes the transformation of the undergrounded Ansan Line upper plaza into an urban sanctuary of care, microclimatic housing, and a 4km continuous park loop.',
+    sections: [
+      // 1. Hero Cover Image (Full width)
+      {
+        type: 'image',
+        src: '/images/projects/ansan/main_render.webp',
+        alt: 'Cross-Connect Ansan — main perspective render',
+        size: 'full',
+      },
+
+      // 2. Introduction
+      {
+        type: 'text',
+        heading: 'Infrastructure Reconstruction: From Disconnection to Connection',
+        body: 'The newly introduced Shinansan Line could act as a vital artery connecting the city, but it could also become a massive barrier causing physical separation at the Ansan Culture Plaza. The upper plaza space created by the undergrounding project represents a major opportunity and question for Ansan. Rather than focusing on what to showcase, this project focuses on "how we will live." Cross-Connect Ansan provides a protected urban section where citizens can recover their daily lives in a dense, high-stress metropolitan system.',
+      },
+
+      // 3. Panel 1: Masterplan
+      {
+        type: 'image',
+        src: '/images/projects/ansan/panel_1_masterplan.webp',
+        alt: 'Site masterplan and design concept',
+        size: 'full',
+        caption: 'Masterplan showing the upper plaza design and housing mass layouts.',
+      },
+
+      // 4. Design Principles 1-3 (Text Left, Image Right)
+      {
+        type: 'image-left-text-right',
+        heading: 'Design Principles for Everyday Recovery',
+        body: '1. An Urban Refuge Shaped by Daily Routines\n\nThe plaza is not a vacant civic space for events or exhibitions. We designed it as an "urban refuge" that sustains itself through the daily routines of its residents. Through a complementary structure where residential life flows into the plaza and plaza activities support residency, we aim for a living public space.\n\n2. A Climate-Protected Structure of Movement, Habitation, and Care\n\nThe cross-shaped site is a node where urban flows converge. The proposal designates this intersection as a core point where transit, habitation, and care meet, forming a climate-controlled "protective spatial structure" that reshapes spatial tensions into safe, layered civic spaces.\n\n3. Microclimate Regulation via 8-12 Story Housing Mass\n\nThe 8-to-12-story residential masses surrounding the site act as microclimate-regulating devices. These masses block external noise and pollution, creating a stable, temperate microclimate inside the public space. This allows citizens to use the plaza year-round, even during Korea\'s extreme summer heat waves and winter cold snaps.',
+        image: {
+          src: '/images/projects/ansan/panel_2_left.webp',
+          alt: 'Transit, habitation, and care diagram',
+          caption: 'Spatial connection and programmatic cross-sections.',
+        }
+      },
+
+      // 5. Panel 2 Right Column
+      {
+        type: 'image',
+        src: '/images/projects/ansan/panel_2_right.webp',
+        alt: 'Microclimate simulation and solar analysis',
+        size: 'medium',
+        caption: 'Microclimatic environment simulations and wind/sunlight diagrams.',
+      },
+
+      // 6. Design Principles 4-5
+      {
+        type: 'text',
+        heading: 'Integrated Health & Symbolic Infrastructure',
+        body: '4. 4km Roof-Loop Greenery: Integrated Health Infrastructure\n\nA continuous 4-kilometer loop running along the roof of the residential masses integrates walking, running, and cycling into a single spatial system. The uninterrupted loop supports daily physical activity, functioning as a vibrant public sports environment and an elevated park infrastructure.\n\n5. Floating Public Canopy: Symbolic & Environmental Shelter\n\nLocated at the central intersection, the floating public structure serves as a symbolic marker to observe and orient within the city. Beyond an icon, it functions as an environmental canopy protecting public activities below from weather conditions, allowing citizens to gather and experience the new urban landscape freely.',
+      },
+
+      // 7. Panel 3 Top Diagram
+      {
+        type: 'image',
+        src: '/images/projects/ansan/panel_3_top.webp',
+        alt: 'Program distribution and elevated loop diagram',
+        size: 'full',
+        caption: 'Program distribution axo and 4km loop connection detail.',
+      },
+
+      // 8. Panel 3 Bottom Housing Unit Row (4 images in a row)
+      {
+        type: 'image-row',
+        images: [
+          {
+            src: '/images/projects/ansan/panel_3_bottom_1.webp',
+            alt: 'Housing unit type 1',
+            caption: 'Unit Type A - Youth studio',
+          },
+          {
+            src: '/images/projects/ansan/panel_3_bottom_2.webp',
+            alt: 'Housing unit type 2',
+            caption: 'Unit Type B - Newlyweds',
+          },
+          {
+            src: '/images/projects/ansan/panel_3_bottom_3.webp',
+            alt: 'Housing unit type 3',
+            caption: 'Unit Type C - Family',
+          },
+          {
+            src: '/images/projects/ansan/panel_3_bottom_4.webp',
+            alt: 'Housing unit type 4',
+            caption: 'Unit Type D - Senior shared',
+          },
+        ]
+      },
+
+      // 9. Manifesto for Life (Text Left, Image Right)
+      {
+        type: 'text-left-image-right',
+        heading: 'A Manifesto for Sustainable Life',
+        body: 'Housing is not the ultimate commercial goal of this development, but the very condition that sustains the Sanctuary. It provides residential stability for youth and newlyweds, forms a community foundation for the elderly, and ensures a safe, protected environment for children.\n\nCross-Connect Ansan redefines the civic plaza. Rather than focusing on flamboyant architectural rhetoric, it centers on how healthily and safely citizens can live their daily lives. Through this infrastructural transformation, Ansan will transcend being a peripheral city, modeling a future city that prioritizes everyday recovery.',
+        image: {
+          src: '/images/projects/ansan/panel_4_top_left.webp',
+          alt: 'Central plaza rendering and canopy view',
+          caption: 'Central plaza view featuring the floating environmental canopy.',
+        }
+      },
+
+      // 10. Panel 4 Top Right Section
+      {
+        type: 'image',
+        src: '/images/projects/ansan/panel_4_top_right.webp',
+        alt: 'Elevated walkway detail section',
+        size: 'medium',
+        caption: 'Detailed structural section of the residential mass and roof loop.',
+      },
+
+      // 11. Panel 4 Bottom Renders (3 images row or grid)
+      {
+        type: 'image-row',
+        images: [
+          {
+            src: '/images/projects/ansan/panel_4_bottom_1.webp',
+            alt: 'Community garden perspective',
+            caption: 'Interior courtyard and microclimate garden.',
+          },
+          {
+            src: '/images/projects/ansan/panel_4_bottom_2.webp',
+            alt: 'Under-canopy public program',
+            caption: 'Public space underneath the environmental canopy.',
+          },
+          {
+            src: '/images/projects/ansan/panel_4_bottom_3.webp',
+            alt: 'Pedestrian plaza walkway',
+            caption: 'Pedestrian flow and entrance plaza connection.',
+          },
+        ]
+      },
+    ],
+  },
 ];
 
 export default projects;
