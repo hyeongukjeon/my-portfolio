@@ -190,17 +190,30 @@ function ImageTextSideSection({ type, image, heading, body }) {
   );
 }
 
-function ImageRowSection({ images }) {
+function ImageRowSection({ images, aspect }) {
+  const numImages = images.length;
+  // Dynamic columns to fill container width
+  let gridClass = 'grid-cols-2 sm:grid-cols-3 md:grid-cols-6';
+  if (numImages === 4) {
+    gridClass = 'grid-cols-2 md:grid-cols-4';
+  } else if (numImages === 3) {
+    gridClass = 'grid-cols-1 sm:grid-cols-3';
+  } else if (numImages === 2) {
+    gridClass = 'grid-cols-1 md:grid-cols-2';
+  }
+
+  const isOriginal = aspect === 'original';
+
   return (
     <FadeInSection className="w-full">
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+      <div className={`grid ${gridClass} gap-4`}>
         {images.map((img, i) => (
-          <figure key={i} className="text-center">
-            <div className="aspect-square overflow-hidden bg-subtle">
+          <figure key={i} className="text-center w-full">
+            <div className={`overflow-hidden bg-subtle w-full ${isOriginal ? '' : 'aspect-square'}`}>
               <img
                 src={img.src}
                 alt={img.alt}
-                className="h-full w-full object-cover"
+                className={`w-full ${isOriginal ? 'h-auto object-contain' : 'h-full object-cover'}`}
                 loading="lazy"
               />
             </div>
@@ -344,6 +357,7 @@ export default function ProjectDetail() {
                 <ImageRowSection
                   key={i}
                   images={section.images}
+                  aspect={section.aspect}
                 />
               );
             case 'text':

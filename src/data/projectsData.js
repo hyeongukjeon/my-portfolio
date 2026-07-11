@@ -935,45 +935,42 @@ const projects = [
         caption: 'Microclimatic environment simulations and wind/sunlight diagrams.',
       },
 
-      // 6. Design Principles 4-5
+      // 6. Integrated Health & Symbolic Infrastructure (Image Left, Text Right)
       {
-        type: 'text',
+        type: 'image-left-text-right',
         heading: 'Integrated Health & Symbolic Infrastructure',
         body: '4. 4km Roof-Loop Greenery: Integrated Health Infrastructure\n\nA continuous 4-kilometer loop running along the roof of the residential masses integrates walking, running, and cycling into a single spatial system. The uninterrupted loop supports daily physical activity, functioning as a vibrant public sports environment and an elevated park infrastructure.\n\n5. Floating Public Canopy: Symbolic & Environmental Shelter\n\nLocated at the central intersection, the floating public structure serves as a symbolic marker to observe and orient within the city. Beyond an icon, it functions as an environmental canopy protecting public activities below from weather conditions, allowing citizens to gather and experience the new urban landscape freely.',
+        image: {
+          src: '/images/projects/ansan/panel_3_top.webp',
+          alt: 'Urban structure exploded axonometric',
+          caption: 'Urban structure (Exploded Axonometric) showing the mixed-use complex and elevated loop.',
+        }
       },
 
-      // 7. Panel 3 Top Diagram
-      {
-        type: 'image',
-        src: '/images/projects/ansan/panel_3_top.webp',
-        alt: 'Program distribution and elevated loop diagram',
-        size: 'full',
-        caption: 'Program distribution axo and 4km loop connection detail.',
-      },
-
-      // 8. Panel 3 Bottom Housing Unit Row (4 images in a row)
+      // 7. Panel 3 Bottom Site Analysis Maps (4 images in a row - Full Width Grid)
       {
         type: 'image-row',
+        aspect: 'original',
         images: [
           {
             src: '/images/projects/ansan/panel_3_bottom_1.webp',
-            alt: 'Housing unit type 1',
-            caption: 'Unit Type A - Youth studio',
+            alt: 'Land Use Analysis',
+            caption: 'Land Use (용도)',
           },
           {
             src: '/images/projects/ansan/panel_3_bottom_2.webp',
-            alt: 'Housing unit type 2',
-            caption: 'Unit Type B - Newlyweds',
+            alt: 'Building Heights Analysis',
+            caption: 'Building Heights (층수)',
           },
           {
             src: '/images/projects/ansan/panel_3_bottom_3.webp',
-            alt: 'Housing unit type 3',
-            caption: 'Unit Type C - Family',
+            alt: 'Building Age Analysis',
+            caption: 'Building Age (년도)',
           },
           {
             src: '/images/projects/ansan/panel_3_bottom_4.webp',
-            alt: 'Housing unit type 4',
-            caption: 'Unit Type D - Senior shared',
+            alt: 'Transit Network Analysis',
+            caption: 'Transit Network (철도 현황)',
           },
         ]
       },
@@ -1000,25 +997,27 @@ const projects = [
       },
 
       // 11. Panel 4 Bottom Renders (3 images row or grid)
+      // 11. Panel 4 Bottom Renders (Stacked full-width images)
       {
-        type: 'image-row',
-        images: [
-          {
-            src: '/images/projects/ansan/panel_4_bottom_1.webp',
-            alt: 'Community garden perspective',
-            caption: 'Interior courtyard and microclimate garden.',
-          },
-          {
-            src: '/images/projects/ansan/panel_4_bottom_2.webp',
-            alt: 'Under-canopy public program',
-            caption: 'Public space underneath the environmental canopy.',
-          },
-          {
-            src: '/images/projects/ansan/panel_4_bottom_3.webp',
-            alt: 'Pedestrian plaza walkway',
-            caption: 'Pedestrian flow and entrance plaza connection.',
-          },
-        ]
+        type: 'image',
+        src: '/images/projects/ansan/panel_4_bottom_1.webp',
+        alt: 'Interior courtyard and microclimate garden render',
+        size: 'full',
+        caption: 'Interior Courtyard & Microclimate Garden (주거지 - Daycare, 시니어센터)',
+      },
+      {
+        type: 'image',
+        src: '/images/projects/ansan/panel_4_bottom_2.webp',
+        alt: 'Public space underneath the environmental canopy render',
+        size: 'full',
+        caption: 'Public Space Underneath the Environmental Canopy (상업지 - 안산 컴플렉스, 센트럴 광장)',
+      },
+      {
+        type: 'image',
+        src: '/images/projects/ansan/panel_4_bottom_3.webp',
+        alt: 'Pedestrian flow and entrance plaza connection render',
+        size: 'full',
+        caption: 'Pedestrian Flow & Entrance Plaza Connection (배후 주거단지 및 옥상정원)',
       },
     ],
   },
