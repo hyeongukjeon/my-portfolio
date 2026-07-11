@@ -777,18 +777,6 @@ const projects = [
   },
   {
     id: 4,
-    slug: 'professional-work',
-    title: 'Professional Work',
-    year: '2025',
-    program: 'Architecture',
-    category: 'Professional Work',
-    location: 'Basel, Switzerland',
-    thumbnail: null,
-    description: '',
-    sections: [],
-  },
-  {
-    id: 5,
     slug: 'foreigner-visitation-analysis',
     title: 'Urban Program & Foreigner Visitation Analysis',
     year: '2024',
@@ -879,7 +867,7 @@ const projects = [
     ],
   },
   {
-    id: 6,
+    id: 5,
     slug: 'cross-connect-ansan',
     title: 'Cross-Connect Ansan',
     year: '2024',

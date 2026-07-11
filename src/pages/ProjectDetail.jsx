@@ -273,10 +273,14 @@ export default function ProjectDetail() {
     );
   }
 
-  const currentIndex = projects.findIndex((p) => p.slug === slug);
-  const prevProject = currentIndex > 0 ? projects[currentIndex - 1] : null;
+  const isResearch = project.category === 'Research';
+  const filteredList = projects.filter((p) =>
+    isResearch ? p.category === 'Research' : p.category !== 'Research'
+  );
+  const currentIndex = filteredList.findIndex((p) => p.slug === slug);
+  const prevProject = currentIndex > 0 ? filteredList[currentIndex - 1] : null;
   const nextProject =
-    currentIndex < projects.length - 1 ? projects[currentIndex + 1] : null;
+    currentIndex < filteredList.length - 1 ? filteredList[currentIndex + 1] : null;
 
   return (
     <main className="min-h-screen bg-paper pb-24 pt-28 text-ink md:pt-32">
@@ -284,17 +288,17 @@ export default function ProjectDetail() {
       <section className="mx-auto w-full max-w-site px-6 md:px-10 lg:px-16">
         <button
           type="button"
-          onClick={() => navigate('/projects')}
+          onClick={() => navigate(isResearch ? '/research' : '/projects')}
           className="mb-8 inline-flex items-center gap-2 font-inter text-[11px] font-medium uppercase tracking-[0.14em] text-ink-40 transition-colors hover:text-ink"
         >
           <span>&larr;</span>
-          <span>All Projects</span>
+          <span>{isResearch ? 'Back to Research' : 'All Projects'}</span>
         </button>
 
         <div className="grid grid-cols-1 gap-6 border-b border-line pb-8 md:grid-cols-[160px_minmax(0,1fr)] md:gap-8">
           <p className="font-inter text-[11px] font-medium uppercase tracking-[0.14em] text-accent md:pt-2">
-            {String(project.id + 1).padStart(2, '0')} /{' '}
-            {String(projects.length).padStart(2, '0')}
+            {String(currentIndex + 1).padStart(2, '0')} /{' '}
+            {String(filteredList.length).padStart(2, '0')}
           </p>
           <div>
             <h1 className="font-inter text-4xl font-medium tracking-tight text-ink md:text-6xl">

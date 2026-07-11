@@ -51,7 +51,7 @@ export default function Research() {
                 </div>
                 <div className="mt-4 grid grid-cols-[34px_minmax(0,1fr)_24px] gap-3">
                   <span className="font-inter text-sm text-ink-40">
-                    {String(project.id + 1).padStart(2, '0')}
+                    {String(researchProjects.indexOf(project) + 1).padStart(2, '0')}
                   </span>
                   <div>
                     <h2 className="font-inter text-base font-medium text-ink">
