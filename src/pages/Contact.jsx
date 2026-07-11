@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
-    <main className="min-h-screen bg-paper px-6 pb-24 pt-32 text-ink md:px-10 lg:px-16">
-      <section className="mx-auto grid w-full max-w-site grid-cols-1 gap-14 lg:grid-cols-2">
+    <main className="min-h-screen bg-paper pb-24 pt-32 text-ink">
+      <section className="mx-auto grid w-full max-w-site grid-cols-1 gap-14 lg:grid-cols-2 px-6 md:px-10 lg:px-16">
         <div>
           <p className="mb-8 font-inter text-[11px] font-medium uppercase tracking-[0.14em] text-ink-40">
             Contact

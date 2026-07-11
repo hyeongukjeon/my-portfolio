@@ -110,8 +110,8 @@ export default function About() {
   const activeData = tabs.find((tab) => tab.id === activeTab)?.data || [];
 
   return (
-    <main className="min-h-screen bg-paper px-6 pb-24 pt-32 text-ink md:px-10 lg:px-16">
-      <section className="mx-auto w-full max-w-site">
+    <main className="min-h-screen bg-paper pb-24 pt-32 text-ink">
+      <section className="mx-auto w-full max-w-site px-6 md:px-10 lg:px-16">
         <motion.h1
           initial={{ opacity: 0, y: 28 }}
           animate={{ opacity: 1, y: 0 }}

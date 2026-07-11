@@ -18,8 +18,8 @@ export default function Projects() {
       : designProjects.filter((project) => project.category === activeCategory);
 
   return (
-    <main className="min-h-screen bg-paper px-6 pb-24 pt-32 text-ink md:px-10 lg:px-16">
-      <section className="mx-auto w-full max-w-site">
+    <main className="min-h-screen bg-paper pb-24 pt-32 text-ink">
+      <section className="mx-auto w-full max-w-site px-6 md:px-10 lg:px-16">
         <p className="mb-4 font-inter text-[11px] font-medium uppercase tracking-[0.14em] text-ink-40">
           Selected works — Architecture &amp; Urban Design
         </p>
