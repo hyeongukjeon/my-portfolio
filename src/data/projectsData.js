@@ -996,28 +996,36 @@ const projects = [
         caption: 'Detailed structural section of the residential mass and roof loop.',
       },
 
-      // 11. Panel 4 Bottom Renders (3 images row or grid)
-      // 11. Panel 4 Bottom Renders (Stacked full-width images)
+      // 11. Panel 4 Bottom Renders (Alternating Image & Text Layouts)
       {
-        type: 'image',
-        src: '/images/projects/ansan/panel_4_bottom_1.webp',
-        alt: 'Interior courtyard and microclimate garden render',
-        size: 'full',
-        caption: 'Interior Courtyard & Microclimate Garden (주거지 - Daycare, 시니어센터)',
+        type: 'image-left-text-right',
+        heading: 'Interior Courtyard & Microclimate Garden',
+        body: 'The interior courtyard is designed to foster intergenerational connection, linking the youth daycare and senior centers with a lush microclimate garden (주거지 - Daycare, 시니어센터).\n\nThis controlled, temperate environment provides a safe, quiet buffer from the surrounding urban streets, allowing residents of all ages to interact daily in a natural landscape.',
+        image: {
+          src: '/images/projects/ansan/panel_4_bottom_1.webp',
+          alt: 'Interior courtyard and microclimate garden render',
+          caption: 'Interior Courtyard & Microclimate Garden.',
+        }
       },
       {
-        type: 'image',
-        src: '/images/projects/ansan/panel_4_bottom_2.webp',
-        alt: 'Public space underneath the environmental canopy render',
-        size: 'full',
-        caption: 'Public Space Underneath the Environmental Canopy (상업지 - 안산 컴플렉스, 센트럴 광장)',
+        type: 'text-left-image-right',
+        heading: 'Central Plaza & Environmental Canopy',
+        body: 'A vibrant public square situated beneath the floating environmental canopy (상업지 - 안산 컴플렉스, 센트럴 광장).\n\nThis space serves as the cultural and commercial heart of the project, sheltering civic gatherings, markets, and social activities from harsh weather while maintaining a continuous view of Ansan\'s new urban landscape.',
+        image: {
+          src: '/images/projects/ansan/panel_4_bottom_2.webp',
+          alt: 'Public space underneath the environmental canopy render',
+          caption: 'Public Space Underneath the Environmental Canopy.',
+        }
       },
       {
-        type: 'image',
-        src: '/images/projects/ansan/panel_4_bottom_3.webp',
-        alt: 'Pedestrian flow and entrance plaza connection render',
-        size: 'full',
-        caption: 'Pedestrian Flow & Entrance Plaza Connection (배후 주거단지 및 옥상정원)',
+        type: 'image-left-text-right',
+        heading: 'Pedestrian Flow & Entrance Plaza',
+        body: 'The pedestrian entrance plaza establishes a fluid connection between the rear residential complexes and the upper park loop (배후 주거단지 및 옥상정원).\n\nDedicated walkways and landscaped ramps prioritize foot traffic, guiding residents smoothly from their homes to the active recreation loops.',
+        image: {
+          src: '/images/projects/ansan/panel_4_bottom_3.webp',
+          alt: 'Pedestrian flow and entrance plaza connection render',
+          caption: 'Pedestrian Flow & Entrance Plaza Connection.',
+        }
       },
     ],
   },
