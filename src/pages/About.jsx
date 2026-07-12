@@ -5,12 +5,12 @@ const educationData = [
   {
     year: '2024.02 - Present',
     title: "Master of Engineering, Interdisciplinary Program in Urban Design",
-    org: 'Seoul National University, Seoul',
+    org: 'Seoul National University, South Korea',
   },
   {
     year: '2017.03 - 2024.02',
     title: "Bachelor of Architecture (B.Arch)",
-    org: 'Hanyang University ERICA, Seoul (GPA: 4.02 / 4.5)',
+    org: 'Hanyang University, South Korea (GPA: 4.02 / 4.5)',
   },
   {
     year: '2022.09 - 2023.02',
