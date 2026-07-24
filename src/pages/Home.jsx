@@ -5,9 +5,10 @@ import projects from "../data/projectsData";
 
 const featuredProject = {
   label: "FEATURED PROJECT 01",
-  title: "Paju Logistics Superform",
-  meta: "Urban Infrastructure / Logistics / Landscape",
-  image: "/images/project1.jpg",
+  title: projects[0].title,
+  meta: `${projects[0].program} / ${projects[0].location} / ${projects[0].year}`,
+  image: projects[0].thumbnail,
+  slug: projects[0].slug,
 };
 
 const selectedWorks = [

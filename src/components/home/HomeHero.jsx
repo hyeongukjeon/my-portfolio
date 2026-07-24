@@ -27,7 +27,7 @@ export default function HomeHero({ featuredProject }) {
             {featuredProject.meta}
           </p>
           <Link
-            to="/projects"
+            to={`/projects/${featuredProject.slug}`}
             className="mt-8 inline-flex min-h-12 w-full max-w-[230px] items-center justify-between border border-ink px-6 font-inter text-sm text-ink transition-colors duration-200 hover:bg-ink hover:text-paper focus:outline-none focus-visible:ring-2 focus-visible:ring-ink focus-visible:ring-offset-2 focus-visible:ring-offset-paper"
           >
             <span>View Project</span>
@@ -39,7 +39,7 @@ export default function HomeHero({ featuredProject }) {
       <div className="flex items-center justify-center lg:min-h-[620px]">
         <img
           src={featuredProject.image}
-          alt="Isometric architectural render of Paju Logistics Superform surrounded by forest and teal infrastructure"
+          alt={`${featuredProject.title} project cover`}
           className="h-auto max-h-[700px] w-full object-contain"
         />
       </div>
