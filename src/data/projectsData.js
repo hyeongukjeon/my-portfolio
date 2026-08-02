@@ -777,6 +777,104 @@ const projects = [
   },
   {
     id: 4,
+    slug: 'genospa',
+    title: 'GenoSpa',
+    year: '2022',
+    program: 'Student Residence / Wellness',
+    category: 'Architecture',
+    location: 'Genoa, Italy',
+    thumbnail: '/images/projects/genospa/cover.webp',
+    description:
+      "GenoSpa adapts student housing to Genoa's steep terrain by turning circulation into a sequence of shared stairs, terraces, study spaces, and gardens. A spa at the lower level anchors the residence as a collective place for living, learning, and wellbeing.",
+    sections: [
+      {
+        type: 'image',
+        src: '/images/projects/genospa/cover.webp',
+        alt: 'GenoSpa terraced communal atrium between student residences',
+        size: 'full',
+      },
+      {
+        type: 'text',
+        heading: 'Living With the Slope',
+        body: "GenoSpa is a student residence designed for a steep site in Genoa's university district. Instead of flattening the hillside, the building follows its section and turns the change in elevation into an inhabited route. Student rooms frame a continuous sequence of stairs, landings, planted terraces, and shared spaces.\n\nThe project combines private rooms with communal kitchens, dining and study areas, lounges, laundry facilities, and a spa. Together, these programs create a gradient from individual retreat to collective life.",
+      },
+      {
+        type: 'image-left-text-right',
+        heading: 'An Inhabited Route',
+        body: 'The first site study organizes a chain of volumes and outdoor rooms between the upper garden and the lower forecourt. The main stair is more than circulation: it expands into places to sit, read, meet, and look across the city.',
+        image: {
+          src: '/images/projects/genospa/site-concept.webp',
+          alt: 'Early GenoSpa site concept drawn over an aerial map of Genoa',
+          caption: 'Early site strategy connecting the upper park to the lower university forecourt.',
+        },
+      },
+      {
+        type: 'image',
+        src: '/images/projects/genospa/site-plan.webp',
+        alt: 'GenoSpa site plan',
+        size: 'full',
+        caption: 'Site plan showing the linear residence embedded between the hillside and the university complex.',
+      },
+      {
+        type: 'image',
+        src: '/images/projects/genospa/long-section.webp',
+        alt: 'Longitudinal section of GenoSpa stepping down the hillside',
+        size: 'full',
+        caption: 'Longitudinal section: residential and communal levels descend with the natural topography.',
+      },
+      {
+        type: 'quote',
+        body: 'The slope becomes a shared interior street, linking private rooms with collective spaces from the garden to the city.',
+        attribution: 'GenoSpa design principle',
+      },
+      {
+        type: 'image-left-text-right',
+        heading: 'Sectional Community',
+        body: 'The stepped section distributes student rooms along compact residential tiers while widening selected landings into dining, study, and lounge spaces. Roof terraces continue the landscape above the building, and every level remains visually connected to daylight and vegetation.',
+        image: {
+          src: '/images/projects/genospa/section-axonometric.webp',
+          alt: 'Section axonometric of the stepped GenoSpa residence',
+          caption: 'Section axonometric showing the continuous stair, shared terraces, and spa at the base.',
+        },
+      },
+      {
+        type: 'text-left-image-right',
+        heading: 'Wellness at the Base',
+        body: 'At the lower arrival level, the spa forms a civic and social anchor for the residence. The pool terrace opens toward the surrounding trees and connects directly to the entrance and parking level, establishing a calm threshold between the university campus and the student community above.',
+        image: {
+          src: '/images/projects/genospa/spa-render.webp',
+          alt: 'Exterior view of the GenoSpa pool terrace',
+          caption: 'Spa terrace embedded at the lower edge of the hillside.',
+        },
+      },
+      {
+        type: 'image-left-text-right',
+        heading: 'Private Rooms, Shared Life',
+        body: 'Compact student rooms provide a quiet, daylit retreat overlooking the landscape. Their restrained interiors place the emphasis on the larger shared sequence outside: the stair atrium, kitchens, study rooms, terraces, and gardens.',
+        image: {
+          src: '/images/projects/genospa/student-room.webp',
+          alt: 'Daylit student room interior in GenoSpa',
+          caption: 'A compact student room with built-in storage and a study window facing the landscape.',
+        },
+      },
+      {
+        type: 'image',
+        src: '/images/projects/genospa/building-section.webp',
+        alt: 'Detailed building section through GenoSpa student rooms and communal spaces',
+        size: 'medium',
+        caption: 'Detailed section through lounge, student room, shared kitchen, corridor, and terrace levels.',
+      },
+      {
+        type: 'image',
+        src: '/images/projects/genospa/wall-detail.webp',
+        alt: 'GenoSpa parapet and brick facade construction detail',
+        size: 'small',
+        caption: 'Parapet, waterproofing, insulation, and facing-brick facade detail.',
+      },
+    ],
+  },
+  {
+    id: 5,
     slug: 'foreigner-visitation-analysis',
     title: 'Urban Program & Foreigner Visitation Analysis',
     year: '2024',
@@ -867,7 +965,7 @@ const projects = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     slug: 'cross-connect-ansan',
     title: 'Cross-Connect Ansan',
     year: '2024',
